@@ -199,7 +199,7 @@ label{
 
 /* To mark the required inputs & make the asterisk stand out */
 .required{
-	color: var(--lt-blue);
+	color: #ff8b94;
 	font-weight: bold;
 	font-size: 1.35rem;
 }
