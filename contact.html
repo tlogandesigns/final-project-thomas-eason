@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact | Up's & Down's Resort</title>
+        <meta name="author" content="Thomas Logan Eason">
+        <meta name="description" content="Contact the Up's & Down's Resort. Reserve a table in our assorted dinning facilities, services in the spa, or a time on the rock wall. Its time to plan the perfect escape.">
+
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <!-- Google Fonts Links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+        <header>
+            <a href="#" aria-label="Go to the Up's & Down's homepage" >
+                <img src="images/logo.png" alt="" class="logo">
+            </a>
+            <h1><a href="index.html">Up's & Down's Resort</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accommodations </a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            
+            
+        </header>
+
+        <img src="images/swiss-valley.jpg" alt="a valley in the Swiss Alps" class="hero">
+
+        <main>
+            <section class="contact-us">
+                <div>
+                    <h2>Contact Us</h2>
+                    <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p> 
+                    <p class="marked">Required fields marked with a <span class="required">*</span></p>
+                    <img src="images/swiss-peak.jpg" alt="*******a valley in the Swiss Alps">
+                </div>
+                <div>
+                    <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                
+                        <label for="my-name">Name<span class="required">*</span></label>
+                        <input type="text" name="my-name" id="my-name" required>
+
+                        <label for="my-address">Address</label>
+                        <input type="text" name="my-address" id="my-address">
+
+                        <label for="my-phone">Phone</label>
+                        <input type="tel" name="my-phone" id="my-phone">
+                
+                        <label for="my-email">Email<span class="required">*</span></label>
+                    
+                        <input type="email" name="my-email" id="my-email" required>
+                
+                        <fieldset>
+                            <legend>Preferred Method of Contact</legend>
+                            <input type="radio" name="contact-pref" id="pref-email" checked>
+                            <label for="pref-email">Email</label>
+                            <input type="radio" name="contact-pref" id="pref-phone">
+                            <label for="pref-phone">Phone</label>
+                        </fieldset>
+                        
+                        <label for="my-comments">Comments</label>
+                        <textarea name="my-comments" id="my-comments"></textarea>
+
+                
+                        <input type="submit" name="my-submit" id="my-submit" value="Submit Form">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright &copy;2023 - Up's & Downs Resort</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>

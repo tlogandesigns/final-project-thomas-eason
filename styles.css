@@ -1,0 +1,327 @@
+:root{
+
+	--lt-blue: #29465d;
+	--dk-blue: #193242;
+	--mint: #cfdad4;
+	--lt-gray: #dad8dc;
+	--off-white: #ebebeb;
+	
+	--head-fonts: "Lora", georgia, serif;
+	--body-fonts: "Ubuntu", Arial, sans-serif;
+	
+	--box-shadow-sm: 3px 3px 7px var(--dk-blue);
+	--box-shadow-lg: 6px 6px 10px var(--dk-blue);
+	
+	--filter-shadow-sm: drop-shadow(4px 4px 8px var(--dk-blue));
+}
+
+/* ----- BODY STYLES ----- */
+*{
+	font-family: var(--body-fonts);
+	line-height: 1.5;
+	box-sizing: border-box;
+}
+
+body{
+	background: var(--dk-blue) ;
+	color: var(--dk-blue); 
+	line-height: 1.5;
+	font-family: var(--body-fonts);
+	font-size: 1rem;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+header, main, footer {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+p{
+	color: var(--dk-blue);
+	font-size: 1.2rem;
+
+}
+
+/* ----- HEADER STYLES ----- */
+header {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-around;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	border-radius: 0 0 25px 25px;
+	padding: 2rem 0;
+	background-color: var(--lt-blue);
+	box-shadow: var(--box-shadow-lg);
+}
+
+.logo {
+	width: 100px;
+	height: auto;
+	filter: var(--filter-shadow-sm);
+}
+
+h1 {
+	font-family: var(--head-fonts);
+	font-size: 3rem;
+	color: var(--lt-gray);
+	margin-left: -100px;
+}
+
+h1 a {
+	text-decoration: none;
+	color: var(--lt-gray);
+}
+
+nav ul {
+	display: flex;
+	gap: 1rem;
+	list-style-type: none;
+	margin-left: 30px;
+}
+
+nav a {
+	padding: 1rem;
+	text-decoration: none;
+	font-size: 1.35rem;
+	font-weight: bold;
+	background-color: var(--dk-blue);
+	color: var(--lt-gray);
+	border-radius: 8px;
+	box-shadow: var(--box-shadow-lg);
+}
+
+nav a:hover {
+	box-shadow: var(--box-shadow-sm);
+}
+
+.hero{
+	display: block;
+	margin: 0 auto;
+	width: 1440px;
+	padding: 0;
+	margin-top: -25px;
+}
+
+/* -------- main styles ------- */
+main {
+    background-color: var(--off-white);
+    color: var(--dk-blue);
+	padding: 25px 0;
+}
+
+h2 {
+	font-family: var(--head-fonts);
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 auto;
+	padding: 25px;
+}
+
+main > p{
+	width: 80ch;
+	margin: 0 auto;
+	padding: 0 0 25px 0;
+}
+
+.group1, .group2, .contact-us {
+	display: grid;
+	grid-template-columns:  1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 16px;
+	color: var(--dk-blue);
+}
+
+.content h3{
+	font-family: var(--head-fonts);
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.content img {
+	margin: 0 auto;
+	padding: 20px;
+	width: 590px;
+	height: 360px;
+}
+
+.content p {
+	width: 60ch;
+}
+
+
+/* -------- contact styles ------- */
+
+.contact-us{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.contact-us div img, .contact-us div p {
+	display: block;
+	margin: 0 auto;
+}
+
+.marked {
+	text-align: center;
+	font-style: italic;
+	font-size: 1rem;
+	padding: 10px 0;
+}
+
+/* Form Styles */
+form{
+	width: 350px;
+	margin: 16px auto;
+	padding: 16px;
+	background-color: var(--mint);
+	color: var(--dk-blue);
+	border-radius: 4px;
+}
+
+/* Display Styles for Form Elements */
+input, label, select, textarea{
+	display: block;
+	width: 100%;
+}
+
+/* Label Styles */
+label{
+	margin: 0 0 4px 16px;
+	font-weight: bold;
+}
+
+/* To mark the required inputs & make the asterisk stand out */
+.required{
+	color: var(--lt-blue);
+	font-weight: bold;
+	font-size: 1.35rem;
+}
+
+/* Input/Select Sizing styles */
+input, select, textarea{
+	padding: 10px;
+	font-size: 16px;
+	margin-bottom: 24px;
+	border-radius: 4px;
+	border: 1px inset var(--lt-blue);
+}
+
+/* Fieldset Styles */
+fieldset{
+	margin-bottom: 24px;
+	border-radius: 4px;
+	border-color: #363432;
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 8px;
+}
+
+/* Legend Styles */
+legend{
+	font-weight: bold;
+}
+
+/* Fieldset Label Styles */
+fieldset label{
+	margin-left: 0;
+}
+
+/* Submit Button Styles */
+input[type="submit"]{
+	background-color: var(--lt-blue);
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	box-shadow: var(--box-shadow-lg);
+}
+
+/* Styles for Invalid Data in Inputs in the Form */
+input:invalid, select:invalid, textarea:invalid{
+	border: 4px solid var(--mint);
+	box-shadow: var(--box-shadow-sm);
+}
+
+/* Styles for Each Input as it has Focus */
+input:focus, select:focus, textarea:focus{
+	outline: 3px solid var(--lt-blue);
+}
+
+/* Styles for the Submit Button Focus */
+input[type="submit"]:focus{
+	outline: 3px solid var(--mint);
+}
+
+/* Styles for Submit Button Hover */
+	input[type="submit"]:hover{
+	box-shadow: var(--box-shadow-sm);
+}
+
+/* Optional Code for Custom Radios - Compare to Your zyBook, I added additional code to make these match my form styles */
+input[type="radio"] + label {
+   	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+input[type="radio"] {
+   	appearance: none;
+   	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 0;
+	border-radius: 0;
+}
+
+input[type="radio"] + label::before {
+   	content: "\00a0";
+	font-size: 2.25em;
+	line-height: 0.65;
+   	border-radius: 50%;
+   	display: inline-block;  
+   	height: 20px;
+   	width: 22px;
+   	text-align: center;
+   	margin-right: 16px;
+   	border: 2px solid white; 
+   	background-color: #fff;
+	padding-bottom: 2px;
+}
+
+input[type="radio"]:checked + label::before {
+   	content: "\2022";
+   	color: #fff;
+   	background: var(--lt-blue);
+}
+
+input[type="radio"]:focus{
+	outline: none;
+}
+
+input[type="radio"]:focus + label::before {
+   	box-shadow: 0 0 0 2px var(--lt-blue);
+}
+
+
+/* -------- footer styles ------- */
+
+footer {
+    background-color: var(--dk-blue);
+	margin: 0 auto;
+	padding: 25px;
+}
+
+footer p{
+	color: var(--off-white);
+	text-align: center;
+	font-size: 1.1rem;
+	
+}
+
