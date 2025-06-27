@@ -264,7 +264,6 @@ input[type="submit"]:focus{
 	box-shadow: var(--box-shadow-sm);
 }
 
-/* Optional Code for Custom Radios - Compare to Your zyBook, I added additional code to make these match my form styles */
 input[type="radio"] + label {
    	cursor: pointer;
 	display: flex;
